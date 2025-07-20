@@ -150,6 +150,8 @@ article {
     transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
+
+
 ul {
     list-style-type: none;
     margin-top: var(--pad-base);
@@ -200,17 +202,18 @@ i {
 
 aside {
     width: 100%;
-    background-color: var(--color-white);
-    border-radius: var(--rounded);
-    box-shadow: var(--shadow-soft);
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    /* box-shadow: var(--shadow-md); */
+    border: 2px solid var(--outline);
 
     ul {
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
         gap: var(--pad-sm);
-        align-items: center;
+        /* align-items: center; */
         padding: var(--pad-section);
+        text-align: center;
 
         li {
             margin: 0;
@@ -218,6 +221,11 @@ aside {
         }
     }
 }
+
+strong {
+    
+}
+
 
 button {
     background-color: white;
